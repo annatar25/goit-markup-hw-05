@@ -455,7 +455,6 @@ address {
 }
 
 .icon-4 {
-  fill: var(--navy-blue);
   width: 8px;
   height: 8px;
 }
@@ -466,6 +465,7 @@ address {
   align-items: center;
   right: 0;
   border-radius: 50%;
+  cursor: pointer;
 
   width: 24px;
   height: 24px;
@@ -475,6 +475,13 @@ address {
   margin-right: 24px;
   margin-left: 360px;
   margin-top: 24px;
+}
+
+.icon-4-container:hover {
+  background-color: var(--green);
+}
+.icon-4-container:hover + .icon-4 {
+  fill: var(--cloud);
 }
 
 .modal-header {
@@ -491,7 +498,7 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   border-radius: 4px;
   width: 360px;
   height: 336px;
@@ -562,9 +569,17 @@ address {
 
 .modal-check-box-area {
   display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+.modal-checkbox-label {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 8px;
+  gap: 10px;
+  cursor: pointer;
 }
 
 .privacy {
@@ -586,11 +601,15 @@ address {
 .icon-6 {
   width: 10px;
   height: 8px;
-  fill: var(--cloud);
+  fill: none;
 }
 
 .modal-checkbox:checked + .check-box-wrapper {
   background-color: var(--iris);
+}
+.modal-checkbox:checked + .check-box-wrapper .icon-6 {
+  display: block;
+  fill: var(--cloud);
 }
 
 .modal-checkbox {
@@ -600,14 +619,13 @@ address {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.modal-button {
-  margin-top: 64px;
+.send-button {
+  margin-top: 24px;
   margin-left: 119px;
 }

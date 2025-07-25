@@ -430,7 +430,7 @@
                 class="form"
                 type="email"
                 name="subscribe"
-                id="email"
+                id="email-subscribe"
                 placeholder="E-mail"
               />
               <button class="button footer-button" type="submit">
@@ -488,32 +488,31 @@
             </svg>
           </div>
           <label class="modal-label" for="textarea">Comment</label>
+
           <div class="input-box-container">
             <textarea
               class="modal-input-textarea"
               name="textarea"
               id="textarea"
               placeholder="Text input"
-            >
-            </textarea>
-          </div>
-
-          <div class="modal-check-box-area">
-            <input type="checkbox" id="checkbox" class="modal-checkbox" />
-            <div class="check-box-wrapper">
-              <svg class="icon-6">
-                <use xlink:href="./images/icons.svg#icon-icon-tick"></use>
-              </svg>
-            </div>
-
-            <label for="checkbox" class="modal-label">
-              I accept the terms and conditions of the
-              <a href="privacy-policy" class="privacy">Privacy Policy</a>
-            </label>
+            ></textarea>
           </div>
         </form>
-        <button type="button" class="button modal-button">Send</button>
-      </div>
+        <div class="modal-check-box-area">
+  <label for="checkbox" class="modal-checkbox-label">
+    <input type="checkbox" id="checkbox" class="modal-checkbox" />
+    <div class="check-box-wrapper">
+      <svg class="icon-6">
+        <use xlink:href="./images/icons.svg#icon-icon-tick"></use>
+      </svg>
+    </div>
+    <span class="checkbox-text modal-label">
+      I accept the terms and conditions of the
+      <a href="privacy-policy" class="privacy">Privacy Policy</a>
+    </span>
+  </label>
+</div>
+<button type="button" class="button send-button">Send</button>
     </div>
   </body>
 </html>
